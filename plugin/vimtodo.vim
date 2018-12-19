@@ -15,7 +15,7 @@ fun! s:toggleComplete()
 
   call setline(line('.'), substitute(l:line, '\[\zs.\ze]', l:char, ''))
 endfun
-command ToggleComplete call s:toggleComplete()
+command! ToggleComplete call s:toggleComplete()
 
 fun! s:openTodo()
   echom g:scriptdir
@@ -33,4 +33,4 @@ fun! s:openTodo()
   execute "set winfixwidth"
   execute "redraw!"
 endfun
-exec "command Todo call s:openTodo()"
+command! Todo call s:openTodo()

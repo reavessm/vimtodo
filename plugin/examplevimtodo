@@ -1,5 +1,19 @@
 VimTodo
 =======
 
-[ ] unchecked box??
-[x] checked box????
+Pressing the t key in normal mode
+inserts a new todo item
+
+Pressing the space bar in normal
+mode anywhere in a todo item will
+toggle the check box
+
+Pressing the q key in normal mode
+will save and quit
+
+I also recommend a markdown
+syntax highlighter as this is now
+a markdown file
+
+[ ] unchecked box
+[x] checked box
