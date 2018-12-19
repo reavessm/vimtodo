@@ -26,7 +26,7 @@ fun! s:openTodo()
   autocmd BufNew,BufRead,BufNewFile *.vimtodo set filetype=markdown
   autocmd BufNew,BufRead,BufNewFile *.vimtodo nnoremap q :wq<CR>
   autocmd BufNew,BufRead,BufNewFile *.vimtodo nnoremap <Space> :ToggleComplete<CR>
-  autocmd BufNew,BufRead,BufNewFile *.vimtodo nnoremap t A<CR>[<Space>]<Space>
+  autocmd BufNew,BufRead,BufNewFile *.vimtodo nnoremap t A<CR><CR>[<Space>]<Space>
   autocmd BufNew,BufRead,BufNewFile *.vimtodo setlocal textwidth=35
 
   execute "40vsp ~/.vimtodo"
